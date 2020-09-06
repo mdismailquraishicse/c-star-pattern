@@ -4,13 +4,16 @@
 
 int main()
 {
-    int i,j;
+    int i,j,rows;
     
-    for(i=1;i<=4;i++)
+    printf("enter no. of rows:");
+    scanf("%d",&rows);
+    
+    for(i=1;i<=rows;i++)
     {
-        for(j=1;j<=7;j++)
+        for(j=1;j<=2*rows-1;j++)
         {
-        if(j<=3+i && j>=5-i)
+        if(j<=rows-1+i && j>=rows+1-i)
         printf("*");
         else
         printf(" ");
